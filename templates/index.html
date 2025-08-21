@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Static Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {# url_for() is used to generate URLs for static files #}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ heading }}</h1>
+        <p>This is a simple Flask app showing how to use static files and templates. Below is an image of some sneakers:</p>
+        {# note that the images folder is added to the filename #}
+        <img src="{{ url_for('static', filename='images/sneakers.png') }}" alt="Sneakers">
+        <button id="demoBtn">Click Me</button>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
