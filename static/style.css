@@ -27,8 +27,9 @@ img {
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 button {
-    background: #3498db;
-    color: #fff;
+    background: #27E7F5;
+    color: #555;
+    font-weight: bold;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
